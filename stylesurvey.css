@@ -1,0 +1,80 @@
+#title {
+	font-size: 35pt;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	padding: 5px 0px 5px 0px;
+	
+    
+}
+body{
+	color: brown;
+	background-color: aquamarine;
+}
+
+#survey-form {	
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	padding: 25px;
+	background-repeat: no-repeat;
+	background-size: auto;
+	text-align: center;
+}
+
+.container {
+	border: 1px solid black;
+	max-width: 10in;
+	font-size: 10px;
+
+	text-align: center;
+	background-color:gray;
+	margin: auto;
+	padding: 1px 1px 1px 1px;
+}
+
+#description {
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+    border: px solid black;
+    padding-top: 15px;
+}
+
+#name-field, #email-field, #age, #dropdown, #radio-buttons, #checkboxes, #comments, #textarea {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+	padding: 0px 0px 10px 0px
+}
+
+#name-label, #email-label, #number-label, #role-label, #radiolist-label, #checklist-label, #comments-label, #textarea-label {
+	
+	text-align: right;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+
+
+select {
+	width: 47%;
+	padding: 4px;
+}
+
+p {
+	margin: 0px 0px 5px 0px;
+}
+
+.button {
+	background-color: cadetblue;
+	padding: 8px 16px 8px 16px;
+	border-radius: 2px;
+	border: none;
+	font-size: 30px;
+	color: black;
+}
+.button:hover {
+  background-color: grey;
+  text-color: white;
+  
+}

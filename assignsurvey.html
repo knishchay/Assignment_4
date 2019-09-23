@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Course Survey</title>
+	<link rel="stylesheet" href="stylesurvey.css">
+	
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<div class="container">
+		<p id="description">-Let us know how we can improve our course-</p>
+		<form id="survey-form" name="survey-form">
+			<div id="name-field">
+				<label for="name" id="name-label">* Name:</label> <input id="name" name="name" placeholder=
+				"Enter your name" required="" type="text">
+			</div><br>
+			<div id="email-field">
+				<label for="email" id="email-label">* Email Address:</label> <input id="email" name=
+				"email" placeholder="Enter your Email" required="" type="email">
+			</div><br>
+			
+			<div id="radio-buttons">
+				<label for="radiolist" id="radiolist-label">* Gender:</label>
+				<div id="radiolist" style="text-align: left; padding: 4px 0px 0px 0px;">
+					<p><label for="Female"><input id="Female" name="radio-buttons" type="radio" value=
+					"Female">Female</label></p>
+					<p><label for="Male"><input id="Male" name="radio-buttons" type="radio" value=
+					"Male">Male</label></p>
+					<p><label for="Prefer not to say"><input id="Prefer not to say" name="radio-buttons" type=
+					"radio" value="Prefer not to say">Prefer not to say</label></p>
+				</div>
+			</div>
+			<div id="dropdown">
+				<label for="role" id="role-label">Which best describes your current role?</label> <select id=
+				"role">
+					<option disabled selected>
+						Select an option
+					</option>
+					<option>
+						Graduate Student
+					</option>
+					<option>
+						PG Student
+					</option>
+					<option>
+						Employee
+					</option>
+					<option>
+						Other
+					</option>
+				</select>
+			</div><br>
+			<div id="textarea" style="margin-bottom: 32px">
+				<label for="textarea" id="textarea-label">If you choose Other, please specify:</label> 
+				<textarea cols="50" name="textarea" placeholder="Enter your comment here..." rows=
+				"4"></textarea>
+			</div>
+			<div id="dropdown">
+				<label for="role" id="role-label">Which course have you opted:</label> <select id=
+				"role">
+					<option disabled selected>
+						Select an option
+					</option>
+					<option>
+						C Programming
+					</option>
+					<option>
+						Java
+					</option>
+					<option>
+						Javascript
+					</option>
+					<option>
+						HTML/CSS
+					</option>
+					<option>
+						Other
+					</option>
+				</select>
+			</div>
+			<div id="textarea" style="margin-bottom: 32px">
+				<label for="textarea" id="textarea-label">If you choose Other, please specify:</label> 
+				<textarea cols="50" name="textarea" placeholder="Enter your comment here..." rows=
+				"4"></textarea>
+			</div>
+			<div id="checkboxes">
+				<label for="checklist" id="checklist-label">Things that should be improved in the future<br>
+				(Check all that apply):</label>
+				<div id="checklist" style="text-align: left; padding: 4px 0px 0px 0px;">
+					<p><label for="Party"><input id="Party" name="checkboxes" type="checkbox" value=
+					"Parties">Presentation Slides</label></p>
+					<p><label for="Support items"><input id="Support items" name="checkboxes" type="checkbox"
+					value="Support items">Real World Examples</label></p>
+					<p><label for="Weapon Gear"><input id="Weapon Gear" name="checkboxes" type="checkbox" value=
+					"Weapon Gear">More Coding Challenges</label></p>
+					<p><label for="Armor Gear"><input id="Armor Gear" name="checkboxes" type="checkbox" value=
+					"Armor Gear">More Theoritical Concepts</label></p>
+				
+					<p><label for="Other"><input id="Other" name="checkboxes" type="checkbox" value=
+					"Other">Other</label></p>
+				</div>
+			</div>
+			<div id="textarea" style="margin-bottom: 32px">
+				<label for="textarea" id="textarea-label">If you choose Other, please specify:</label> 
+				<textarea cols="50" name="textarea" placeholder="Enter your comment here..." rows=
+				"4"></textarea>
+			</div>
+			<div id="textarea" style="margin-bottom: 32px">
+				<label for="textarea" id="textarea-label">Any Comments or Suggestions?</label> 
+				<textarea cols="50" name="textarea" placeholder="Enter your comment here..." rows=
+				"4"></textarea>
+			</div><button class="button" id="submit" type="submit">Submit</button>
+		</form>
+		<button class=" add-item" onclick=Viewdetailsmodal()>View Details</button>
+		<span class="close" onclick=closedetailsmodel()>&times</span>
+	</div>
+</body>
+</html>
